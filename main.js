@@ -108,6 +108,7 @@ function modifyOrDltItem(e) {
     target.remove();
 
     deleteItemFromLocalStorage(id);
+    location.reload();
   } else if (e.target.classList.contains("edit-product")) {
     let updateBtnElm;
     // search id from ui data source
